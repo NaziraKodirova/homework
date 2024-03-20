@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    {% block title %}
+        TMPH00014
+    {% endblock %}
+</title>
+<link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header">
+  <div class="header-left-panel">
+    <div class="logo-wrap">
+      <div class="logo">
+        <h2>Your Slogan</h2>
+        <h1>WebsiteName</h1>
+      </div>
+    </div>
+  </div>
+  <div class="header-right-panel">
+    <div class="header-right-panel-top">
+      <p>Call Us : 000 888 8888</p>
+      <p><a href="#">Mail Us : info@websitename.com</a></p>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="marRight20"><a class="active" href="{% url 'index' %}">home</a></li>
+        <li class="marRight20"><a href="{% url 'about' %}">about</a></li>
+        <li><a href="{% url 'contact' %}">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--- header div end -->
+{% block content %}{% endblock %}
+<div class="footer">
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-panel marRight20">
+          <h3>Uzb Elections</h3>
+          <div class="border"></div>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">News</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+        </div>
+        <div class="footer-panel marRight20">
+          <h3>Top Categories</h3>
+          <div class="border"></div>
+          <p><a href="#">Category One</a></p>
+          <p><a href="#">Category Two</a></p>
+          <p><a href="#">Category Three</a></p>
+        </div>
+        <div class="footer-panel">
+          <h3>Useful Links</h3>
+          <div class="border"></div>
+          <p><a href="#">Contact Us</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Sitemap</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>Copyright (c) websitename. All rights reserved. <a href="http://www.alltemplates.com">&lt;www.alltemplateneeds.com&gt;</a></p>
+</div>
+</body>
+</html>
